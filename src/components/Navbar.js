@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { RiReservedLine } from "react-icons/ri";
 
 export default function Navbar() {
@@ -6,26 +7,29 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <a href="/" className="text-3xl font-extrabold  text-[#5c5147] ">
+            <Link href="/" className="text-3xl font-extrabold  text-[#5c5147] ">
               Petrichor
-            </a>
+            </Link>
           </div>
           <div className="flex space-x-5 items-center justify-between">
-            <a href="/" className="text-white hover:text-gray-900">
+            <Link href="/" className="text-white hover:text-gray-900">
               Home
-            </a>
-            <a href="/menu" className="text-white hover:text-gray-900">
+            </Link>
+            <Link href="/menu" className="text-white hover:text-gray-900">
               Menu
-            </a>
-            <a href="/reservation" className="text-white hover:text-gray-900">
+            </Link>
+            <Link
+              href="/reservation"
+              className="text-white hover:text-gray-900"
+            >
               Reservation
-            </a>
-            <a
+            </Link>
+            <Link
               href="/manager"
               className="  text-white hover:text-gray-900 flex-grow-0"
             >
               <RiReservedLine className="h-6 w-6" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

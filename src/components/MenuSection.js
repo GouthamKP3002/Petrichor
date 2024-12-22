@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { Leaf } from "lucide-react";
+import Image from "next/image";
 
 export default function MenuPage() {
   const [activeCategory, setActiveCategory] = useState("Global Comforts");
@@ -283,11 +284,15 @@ export default function MenuPage() {
               className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-200"
             >
               <div className="flex gap-6">
-                <img
-                  src={item.image}
-                  alt={item.name}
-                  className="w-32 h-32 rounded-lg object-cover"
-                />
+                <div className="relative w-32 h-32">
+                  <Image
+                    src={item.image}
+                    alt={item.name}
+                    fill
+                    className="rounded-lg object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
                 <div className="flex-1">
                   <div className="flex justify-between items-start mb-2">
                     <h3 className="text-xl font-serif text-[#2c2420]">
