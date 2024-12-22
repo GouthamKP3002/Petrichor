@@ -91,7 +91,7 @@ export default function MenuPage() {
         description:
           "Seasonal greens, roasted vegetables, toasted seeds, herb vinaigrette",
         image:
-          "http://minimalistbaker.com/wp-content/uploads/2017/06/AMAZING-Roasted-Vegetable-Salad-Chimichurri-30-minutes-healthy-SO-delicious-vegan-plantbased-glutenfree-salad-recipe-minimalistbaker.jpg",
+          "https://www.litehousefoods.com/wp-content/uploads/2021/09/RECIPE-IMAGE_8-aspect-ratio-782-521.jpg",
         // Add actual image URL: "/images/garden-salad.jpg"
         dietary: ["VG", "GF"],
       },
@@ -167,7 +167,7 @@ export default function MenuPage() {
         price: "$18",
         description: "Creamy barley with roasted butternut squash and sage",
         image:
-          "http://images.media-allrecipes.com/userphotos/960x960/3756518.jpg",
+          "https://assets.epicurious.com/photos/57c5c60b84c001120f616529/1:1/w_2560%2Cc_limit/mushroom-barley-risotto.jpg",
         // Add actual image URL: "/images/barley-risotto.jpg"
         dietary: ["V"],
       },
@@ -226,7 +226,7 @@ export default function MenuPage() {
         price: "$35",
         description: "Blue crab cooked in a spicy tomato and onion gravy",
         image:
-          "http://www.archanaskitchen.com/images/archanaskitchen/1-Author/FlavorFlameFusion/shutterstock_444716848.jpg",
+          "https://i0.wp.com/atmykitchen.net/wp-content/uploads/2020/07/nandu_masala6864865995417665606.jpeg?resize=640%2C600&ssl=1",
         // Add actual image URL: "/images/crab-masala.jpg"
         dietary: ["GF"],
       },
