@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import { Calendar, Clock, Users, MapPin } from "lucide-react";
 
 export default function Home() {
   return (
@@ -9,20 +8,20 @@ export default function Home() {
       <section className="relative h-screen">
         <div className="absolute inset-0 bg-black/40 z-10" />
         <img
-          src="https://static.dezeen.com/uploads/2021/11/noma-big-architecture-interiors-restaurant-copenhagen-denmark_dezeen_2364_hero50.jpg"
+          src="\home.webp"
           // Replace with: "path/to/hero-restaurant-image.jpg"
           alt="Restaurant ambiance"
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="relative z-20 flex flex-col items-center justify-center h-full text-white text-center px-4">
-          <h1 className="text-6xl font-serif mb-4">petrichor</h1>
+          <h1 className="text-6xl font-serif mb-4">Saptha Swada</h1>
           <div className="w-24 h-1 bg-[#8b7355] mb-6"></div>
           <p className="text-xl max-w-2xl mx-auto">
-            Where tradition meets earth's bounty, celebrating the essence of
-            natural flavors
+            Where tradition meets Karnataka's rich tapestry of flavors, savoring
+            the essence of cultural heritage.
           </p>
           <button className="mt-8 px-8 py-3 bg-[#8b7355] text-white rounded-full hover:bg-[#6d5a43] transition-colors">
-            <a href="menu">Look out menu!</a>
+            <a href="menu">Look out for menu!</a>
           </button>
         </div>
       </section>
@@ -35,10 +34,11 @@ export default function Home() {
               Our Story
             </h2>
             <p className="text-[#5c5147] leading-relaxed mb-6">
-              Petrichor was born from a deep connection to the earth and its
-              seasons. Our farm-to-table approach celebrates traditional cuisine
-              made with fresh, locally sourced ingredients. Every dish tells a
-              story of the land, the farmers, and time-honored cooking methods.
+              Saptha Swada now brings the vibrant culture of Karnataka to your
+              plate, one day at a time. Inspired by the diversity of our land,
+              we offer a unique journey through the state's traditional cuisine.
+              Each dish is a celebration of Karnataka's regions, their people,
+              and the culinary treasures passed down through generations.
             </p>
             <div className="flex items-center space-x-6">
               <div className="text-center">
@@ -63,15 +63,15 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-4 ">
             <img
-              src="https://npr.brightspotcdn.com/dims4/default/7726551/2147483647/strip/true/crop/1640x924+0+0/resize/880x496!/quality/90/?url=http:%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fe5%2Fed%2Ff5692650470eb274bd5ce23b7ad8%2Funtitled-design-7.png"
+              src="\lo.jpg"
               // Replace with: "path/to/farm-image.jpg"
               alt="Local farm"
               className="w-full h-64 object-cover rounded-lg"
             />
             <img
-              src="https://img.freepik.com/premium-photo/grains-tradition-essence-sustenance-grains-tradition-from-earth-hearth_949162-3586.jpg"
+              src="\pep.jpg"
               // Replace with: "path/to/ingredients-image.jpg"
               alt="Fresh ingredients"
               className="w-full h-64 object-cover rounded-lg mt-8"
@@ -84,24 +84,24 @@ export default function Home() {
       <section className="py-20 bg-[#2c2420] text-white">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-4xl font-serif text-center mb-16">
-            Experience Petrichor
+            Experience Saptha Swada
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                title: "Farmers' Market",
+                title: "Seven Days, Seven Flavors of Karnataka",
                 description:
-                  "Every weekend, connect with local farmers and artisans in our market.",
+                  "Embark on a week-long culinary tour of Karnataka, with each day showcasing the unique cuisine of a different region.",
               },
               {
                 title: "Cooking Classes",
                 description:
-                  "Learn traditional techniques in our hands-on cooking workshops.",
+                  "Master Karnataka’s regional delicacies through immersive cooking workshops.",
               },
               {
                 title: "Community Events",
                 description:
-                  "Join us for wine tastings, live music, and cultural celebrations.",
+                  "Celebrate Karnataka’s cultural heritage with live folk music, dance performances, and traditional festivities.",
               },
             ].map((feature, index) => (
               <div
@@ -120,7 +120,7 @@ export default function Home() {
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-4xl font-serif text-[#2c2420] mb-6">
-            @petrichor
+            @sapthaswada
           </h2>
           <p className="text-[#5c5147] mb-12">
             Follow us for daily inspiration
@@ -136,7 +136,7 @@ export default function Home() {
             </div>
             <div className="relative aspect-square">
               <img
-                src="https://wallpapercave.com/wp/wp8522334.jpg"
+                src="\bany3.jpg"
                 // Replace with: "path/to/instagram-image-${index}.jpg"
                 alt="Instagram post"
                 className="w-full h-full object-cover rounded-lg"
@@ -144,7 +144,7 @@ export default function Home() {
             </div>
             <div className="relative aspect-square">
               <img
-                src="https://images.saymedia-content.com/.image/c_limit%2Ccs_srgb%2Cfl_progressive%2Cq_auto:eco%2Cw_700/MTc2MjkxMjk4NzY3NDE0NDYy/wiccan-wheel-of-the-year-mabon-correspondences.jpg"
+                src="\banyantree2.jpg"
                 // Replace with: "path/to/instagram-image-${index}.jpg"
                 alt="Instagram post"
                 className="w-full h-full object-cover rounded-lg"
@@ -152,7 +152,7 @@ export default function Home() {
             </div>
             <div className="relative aspect-square">
               <img
-                src="https://earthbounty-eg.com/wp-content/uploads/2023/10/Tomatoes-7.jpg"
+                src="\banyantree.jpg"
                 // Replace with: "path/to/instagram-image-${index}.jpg"
                 alt="Instagram post"
                 className="w-full h-full object-cover rounded-lg"

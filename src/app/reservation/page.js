@@ -7,8 +7,7 @@ export default function Reservation() {
     <div
       className="min-h-screen relative"
       style={{
-        backgroundImage:
-          "url('https://i.pinimg.com/originals/fd/6c/12/fd6c12dab0055e548eb8250f0c8db3ce.jpg')", // Using same background as menu for consistency
+        backgroundImage: "url('home.webp')", // Using same background as menu for consistency
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",

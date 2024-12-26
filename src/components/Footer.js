@@ -9,9 +9,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-lg font-bold mb-4">Contact Us</h3>
-            <p>#85 Restaurant Street, Bangalore, Karnataka</p>
+            <p>#85 Bigbanyantree, Bangalore, Karnataka</p>
             <p>Phone:+91 659436258</p>
-            <p>Email:petrichor69@petri.com </p>
+            <p>Email:Sapthaswada07@swada.com </p>
           </div>
           <div>
             <h3 className="text-lg font-bold mb-4">Hours</h3>
@@ -25,7 +25,11 @@ export default function Footer() {
               <a href="#Facebook" className="hover:text-gray-300">
                 <CgFacebook />
               </a>
-              <a href="#Instagram" className="hover:text-gray-300">
+              <a
+                href="https://www.instagram.com/_saptha_swadha_/?igsh=MWdqNzBkZHd2enFicw%3D%3D"
+                target="_blank"
+                className="hover:text-gray-300"
+              >
                 <CgInstagram />
               </a>
               <a href="#Twitter" className="hover:text-gray-300">

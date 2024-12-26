@@ -7,247 +7,347 @@ export default function MenuPage() {
   const [activeCategory, setActiveCategory] = useState("Global Comforts");
 
   const categories = [
-    "Global Comforts",
-    "Farm Fresh Salads",
-    "Heritage Grains",
-    "Wild Catch",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday",
   ];
 
   const menuItems = {
-    "Global Comforts": [
+    Monday: [
       {
-        name: "Traditional Butter Chicken",
-        price: "$22",
+        name: "Udupi Sambar",
+        price: "₹150",
         description:
-          "Free-range chicken in a rich, aromatic tomato-cream sauce with hand-ground spices",
-        image:
-          "https://masalaandchai.com/wp-content/uploads/2022/03/Butter-Chicken.jpg",
-        // Add actual image URL: "/images/butter-chicken.jpg"
-        dietary: ["GF"],
-      },
-      {
-        name: "Paneer Tikka Masala",
-        price: "$20",
-        description:
-          "Char-grilled cottage cheese in a creamy, spiced tomato gravy",
-        image:
-          "https://www.thespruceeats.com/thmb/0mapLbrjEH8-iMB4RBMTYbV-Urc=/3863x2578/filters:fill(auto,1)/paneer-butter-masala-or-cheese-cottage-curry--popular-indian-lunch-dinner-menu-in-weddings-or-parties--selective-focus-669329084-5acac5acc67335003764a3bc.jpg",
-        // Add actual image URL: "/images/paneer-tikka.jpg"
+          "A tangy and flavorful lentil-based curry prepared with freshly ground spices and vegetables.",
+        image: "",
         dietary: ["V", "GF"],
       },
       {
-        name: "Hyderabadi Biryani",
-        price: "$24",
+        name: "Goli Baje",
+        price: "₹80",
         description:
-          "Long-grain basmati rice, tender chicken, saffron, and aromatic spices",
-        image:
-          "https://leyaana.com/wp-content/uploads/2022/04/thjrkjh-scaled.jpeg",
-        // Add actual image URL: "/images/biryani.jpg"
-        dietary: ["GF"],
-      },
-      {
-        name: "Wild Mushroom Pappardelle",
-        price: "$20",
-        description:
-          "House-made pasta with locally foraged mushrooms and fresh herbs",
-        image: "https://live.staticflickr.com/2411/2273387844_252b91a956_b.jpg",
-        // Add actual image URL: "/images/mushroom-pasta.jpg"
+          "Soft and fluffy fritters made with yogurt, flour, and spices, deep-fried to perfection.",
+        image: "",
         dietary: ["V"],
       },
       {
-        name: "Mexican Street Tacos",
-        price: "$18",
+        name: "Neer Dosa",
+        price: "₹120",
         description:
-          "Organic corn tortillas, grass-fed beef, fresh salsa verde",
-        image:
-          "https://4.bp.blogspot.com/-FVzRbBOC93o/WyTBop5XwbI/AAAAAAAAE1Y/jju-7aEIfPo_amMfRXsQ8MrZG6CXxhHDgCLcBGAs/s1600/cropped-11960570_10200648513051128_1436061844_o.jpg",
-        // Add actual image URL: "/images/tacos.jpg"
-        dietary: ["GF"],
+          "Thin, soft rice crepes served with coconut chutney and jaggery syrup.",
+        image: "",
+        dietary: ["GF", "V"],
       },
       {
-        name: "Vegetable Korma",
-        price: "$18",
+        name: "Tuppa Dosa",
+        price: "₹140",
         description:
-          "Seasonal vegetables in a rich, mildly spiced cashew and coconut curry",
-        image:
-          "https://www.ihearteating.com/wp-content/uploads/2016/04/vegetable-korma-1200-1.jpg",
-        // Add actual image URL: "/images/vegetable-korma.jpg"
-        dietary: ["VG", "GF"],
-      },
-    ],
-    "Farm Fresh Salads": [
-      {
-        name: "Heritage Tomato & Burrata",
-        price: "$16",
-        description: "Heirloom tomatoes, creamy burrata, basil, aged balsamic",
-        image:
-          "https://www.justalittlebitofbacon.com/wp-content/uploads/2018/08/tomato-burrata-salad-2.jpg",
-        // Add actual image URL: "/images/tomato-burrata.jpg"
-        dietary: ["V", "GF"],
-      },
-      {
-        name: "Harvest Garden Salad",
-        price: "$14",
-        description:
-          "Seasonal greens, roasted vegetables, toasted seeds, herb vinaigrette",
-        image:
-          "https://www.litehousefoods.com/wp-content/uploads/2021/09/RECIPE-IMAGE_8-aspect-ratio-782-521.jpg",
-        // Add actual image URL: "/images/garden-salad.jpg"
-        dietary: ["VG", "GF"],
-      },
-      {
-        name: "Chickpea Chaat Salad",
-        price: "$15",
-        description:
-          "Spiced chickpeas, onions, tomatoes, tangy tamarind dressing",
-        image:
-          "https://i.pinimg.com/originals/40/67/1d/40671d2288d2fbbf46edc93b97f5144a.png",
-        // Add actual image URL: "/images/chaat-salad.jpg"
-        dietary: ["VG", "GF"],
-      },
-      {
-        name: "Quinoa Tabbouleh",
-        price: "$15",
-        description: "Quinoa, parsley, mint, tomatoes, lemon dressing",
-        image:
-          "https://www.nutritiouseats.com/wp-content/uploads/2012/06/Tabouli-4.jpg",
-        // Add actual image URL: "/images/quinoa-tabbouleh.jpg"
-        dietary: ["VG", "GF"],
-      },
-      {
-        name: "Spicy Mango Salad",
-        price: "$16",
-        description: "Fresh mango slices, chili flakes, lime dressing",
-        image:
-          "https://thewanderlustkitchen.com/wp-content/uploads/2021/05/Mango-Salad-090-1024x683.jpg",
-        // Add actual image URL: "/images/mango-salad.jpg"
-        dietary: ["VG", "GF"],
-      },
-      {
-        name: "Cucumber Raita Salad",
-        price: "$12",
-        description: "Cucumber, yogurt, roasted cumin, fresh mint",
-        image: "https://toriavey.com/images/2014/03/IMG_7455-2.jpeg",
-        // Add actual image URL: "/images/raita-salad.jpg"
-        dietary: ["V", "GF"],
-      },
-    ],
-    "Heritage Grains": [
-      {
-        name: "Ancient Grain Bowl",
-        price: "$19",
-        description: "Quinoa, farro, roasted vegetables, tahini dressing",
-        image:
-          "https://i.pinimg.com/originals/04/77/bf/0477bfaa8277c7ae30aae5a82e27bf04.jpg",
-        // Add actual image URL: "/images/grain-bowl.jpg"
-        dietary: ["VG"],
-      },
-      {
-        name: "Vegetable Pulao",
-        price: "$17",
-        description:
-          "Fragrant basmati rice cooked with seasonal vegetables and spices",
-        image:
-          "https://thespicemess.com/wp-content/uploads/2021/01/Vegetable-Pulao-21-feature-1280x904.jpg",
-        // Add actual image URL: "/images/vegetable-pulao.jpg"
-        dietary: ["VG", "GF"],
-      },
-      {
-        name: "Khichdi with Ghee",
-        price: "$16",
-        description:
-          "Lentil and rice porridge seasoned with turmeric and clarified butter",
-        image:
-          "https://img.freepik.com/premium-photo/dal-khichdi-fry-with-ghee-bowl-hindu_1279574-5016.jpg",
-        // Add actual image URL: "/images/khichdi.jpg"
-        dietary: ["VG", "GF"],
-      },
-      {
-        name: "Barley Risotto",
-        price: "$18",
-        description: "Creamy barley with roasted butternut squash and sage",
-        image:
-          "https://assets.epicurious.com/photos/57c5c60b84c001120f616529/1:1/w_2560%2Cc_limit/mushroom-barley-risotto.jpg",
-        // Add actual image URL: "/images/barley-risotto.jpg"
+          "Crispy dosa made with clarified butter, served with sambar and chutney.",
+        image: "",
         dietary: ["V"],
       },
       {
-        name: "Coconut Rice Pilaf",
-        price: "$16",
-        description: "Basmati rice infused with coconut milk and curry leaves",
-        image:
-          "https://img.apmcdn.org/4b31515e9810edcca35c9451391fa02d7d5ea799/uncropped/0922c5-splendid-table-coconut-milk-rice-pilaf.jpg",
-        // Add actual image URL: "/images/coconut-rice.jpg"
-        dietary: ["VG", "GF"],
+        name: "Pineapple Gojju",
+        price: "₹130",
+        description:
+          "A tangy and spicy pineapple curry with mustard and jaggery flavors.",
+        image: "",
+        dietary: ["V", "GF"],
       },
       {
-        name: "Dalia Upma",
-        price: "$15",
+        name: "Udupi Rasayana",
+        price: "₹60",
         description:
-          "Cracked wheat with vegetables, mustard seeds, and curry leaves",
-        image:
-          "https://www.whiskaffair.com/wp-content/uploads/2020/08/Dalia-Upma-1.jpg",
-        // Add actual image URL: "/images/dalia-upma.jpg"
+          "A dessert made with ripe bananas, jaggery, and coconut milk.",
+        image: "",
         dietary: ["VG", "GF"],
       },
     ],
-    "Wild Catch": [
+    Tuesday: [
       {
-        name: "Grilled Sea Bass",
-        price: "$32",
-        description: "Line-caught sea bass, herb butter, seasonal vegetables",
-        image:
-          "https://kayakguru.com/wp-content/uploads/2019/04/Grilled-sea-bass-served-on-a-plate.jpg",
-        // Add actual image URL: "/images/sea-bass.jpg"
-        dietary: ["GF"],
-      },
-      {
-        name: "Tandoori Salmon",
-        price: "$30",
+        name: "Coorgi Pandi Curry",
+        price: "₹220",
         description:
-          "Salmon marinated in yogurt and spices, roasted in a clay oven",
-        image:
-          "https://greatcurryrecipes.net/wp-content/uploads/2012/03/tans4-1152x1536.jpg",
-        // Add actual image URL: "/images/tandoori-salmon.jpg"
+          "A spicy pork curry prepared with Coorg’s special black vinegar and spices.",
+        image: "",
         dietary: ["GF"],
       },
       {
-        name: "Kerala Fish Curry",
-        price: "$28",
+        name: "Kadambuttu",
+        price: "₹120",
         description:
-          "Fresh fish cooked in a coconut-based curry with curry leaves",
-        image:
-          "https://www.licious.in/blog/wp-content/uploads/2020/12/Kerala-Fish-Curry.jpg",
-        // Add actual image URL: "/images/kerala-fish-curry.jpg"
-        dietary: ["GF"],
+          "Soft steamed rice balls traditionally served with Coorg-style curries.",
+        image: "",
+        dietary: ["GF", "V"],
       },
       {
-        name: "Spicy Crab Masala",
-        price: "$35",
-        description: "Blue crab cooked in a spicy tomato and onion gravy",
-        image:
-          "https://i0.wp.com/atmykitchen.net/wp-content/uploads/2020/07/nandu_masala6864865995417665606.jpeg?resize=640%2C600&ssl=1",
-        // Add actual image URL: "/images/crab-masala.jpg"
-        dietary: ["GF"],
-      },
-      {
-        name: "Shrimp Moilee",
-        price: "$29",
-        description: "Prawns simmered in a delicate coconut milk curry",
-        image:
-          "https://tse4.mm.bing.net/th?id=OIP.HNIq5o81vYXcOz-Lmz10KwHaHa&pid=Api&P=0&h=180",
-        // Add actual image URL: "/images/shrimp-moilee.jpg"
-        dietary: ["GF"],
-      },
-      {
-        name: "Mahi-Mahi Tikka",
-        price: "$31",
+        name: "Baimbale Curry (Bamboo Shoot Curry)",
+        price: "₹140",
         description:
-          "Chunks of mahi-mahi marinated in Indian spices and grilled to perfection",
-        image:
-          "https://lh3.googleusercontent.com/vSv77jt7rJnTvkX_M_WU-0mOGbDKeD39sLsHv000ERJy7j5PR1mlYwZF4d4mZtKHJ0-c_WQsnZvSR6kSFfX5OZjHICe_eqSM53O6bFUVq0QlKOrEmCZI",
-        // Add actual image URL: "/images/mahi-tikka.jpg"
+          "Tender bamboo shoots cooked in coconut and spices, a Coorg specialty.",
+        image: "",
+        dietary: ["VG", "GF"],
+      },
+      {
+        name: "Akki Roti",
+        price: "₹100",
+        description:
+          "Rice flour flatbread flavored with coconut and green chilies.",
+        image: "",
+        dietary: ["GF", "V"],
+      },
+      {
+        name: "Noolputtu (String Hoppers)",
+        price: "₹130",
+        description: "Rice noodles served with spicy coconut-based curries.",
+        image: "",
+        dietary: ["GF", "V"],
+      },
+      {
+        name: "Kachampuli Rasayana",
+        price: "₹80",
+        description:
+          "A Coorg dessert with ripe bananas and jaggery infused with Kachampuli vinegar.",
+        image: "",
+        dietary: ["VG", "GF"],
+      },
+    ],
+    Wednesday: [
+      {
+        name: "Ragi Mudde",
+        price: "₹100",
+        description:
+          "Finger millet balls served with a hearty greens-based curry.",
+        image: "",
+        dietary: ["VG", "GF"],
+      },
+      {
+        name: "Bassaru",
+        price: "₹120",
+        description:
+          "Lentil and greens-based curry served as a comforting broth.",
+        image: "",
+        dietary: ["VG", "GF"],
+      },
+      {
+        name: "Kharabath",
+        price: "₹80",
+        description: "Spicy semolina dish cooked with vegetables and spices.",
+        image: "",
+        dietary: ["V"],
+      },
+      {
+        name: "Chutney Pudi",
+        price: "₹50",
+        description:
+          "A flavorful powder made of roasted lentils, chili, and tamarind.",
+        image: "",
+        dietary: ["VG", "GF"],
+      },
+      {
+        name: "Gurellu Chutney",
+        price: "₹70",
+        description:
+          "Chutney made with sesame seeds and spices, unique to North Karnataka.",
+        image: "",
+        dietary: ["VG", "GF"],
+      },
+      {
+        name: "Holige (Obbattu)",
+        price: "₹100",
+        description: "Sweet flatbread stuffed with lentil and jaggery filling.",
+        image: "",
+        dietary: ["V"],
+      },
+    ],
+    Thursday: [
+      {
+        name: "Bisi Bele Bath",
+        price: "₹150",
+        description:
+          "A traditional rice and lentil dish flavored with tamarind and spices.",
+        image: "",
+        dietary: ["V"],
+      },
+      {
+        name: "Kosambari",
+        price: "₹60",
+        description:
+          "Refreshing lentil and cucumber salad seasoned with coconut and lime.",
+        image: "",
+        dietary: ["V", "GF"],
+      },
+      {
+        name: "Masala Dosa",
+        price: "₹140",
+        description: "Crispy dosa filled with spicy potato masala.",
+        image: "",
+        dietary: ["V"],
+      },
+      {
+        name: "Puliogare",
+        price: "₹130",
+        description: "Tangy tamarind rice with roasted peanuts and spices.",
+        image: "",
+        dietary: ["V", "GF"],
+      },
+      {
+        name: "Kesari Bath",
+        price: "₹100",
+        description: "Sweet semolina dessert infused with saffron and ghee.",
+        image: "",
+        dietary: ["V"],
+      },
+      {
+        name: "Mosaru Bajji",
+        price: "₹80",
+        description: "Chilled yogurt-based dish with cucumber and spices.",
+        image: "",
+        dietary: ["V", "GF"],
+      },
+    ],
+    Friday: [
+      {
+        name: "Mangalorean Neer Dosa",
+        price: "₹120",
+        description:
+          "Soft, lacy rice crepes served with chutney and fish curry.",
+        image: "",
         dietary: ["GF"],
+      },
+      {
+        name: "Chicken Ghee Roast",
+        price: "₹250",
+        description: "Spicy, tangy chicken roast cooked in clarified butter.",
+        image: "",
+        dietary: ["GF"],
+      },
+      {
+        name: "Mangalorean Fish Curry",
+        price: "₹220",
+        description:
+          "Coconut-based fish curry infused with tamarind and local spices.",
+        image: "",
+        dietary: ["GF"],
+      },
+      {
+        name: "Kori Roti",
+        price: "₹160",
+        description: "Crispy rice wafers served with spicy chicken curry.",
+        image: "",
+        dietary: ["GF"],
+      },
+      {
+        name: "Patrode",
+        price: "₹120",
+        description:
+          "Colocasia leaves stuffed with spiced rice flour batter and steamed.",
+        image: "",
+        dietary: ["V", "GF"],
+      },
+      {
+        name: "Mangalore Buns",
+        price: "₹80",
+        description: "Sweet, fluffy fried bread made with banana and flour.",
+        image: "",
+        dietary: ["V"],
+      },
+    ],
+    Saturday: [
+      {
+        name: "Jolad Roti",
+        price: "₹80",
+        description: "Sorghum flatbread served with brinjal curry.",
+        image: "",
+        dietary: ["VG", "GF"],
+      },
+      {
+        name: "Ennegai",
+        price: "₹120",
+        description: "Spiced stuffed brinjals cooked in a rich gravy.",
+        image: "",
+        dietary: ["VG", "GF"],
+      },
+      {
+        name: "Shenga Chutney",
+        price: "₹50",
+        description:
+          "Groundnut-based spicy chutney, a North Karnataka classic.",
+        image: "",
+        dietary: ["VG", "GF"],
+      },
+      {
+        name: "Hurali Saaru",
+        price: "₹130",
+        description: "Horse gram curry rich in spices and flavor.",
+        image: "",
+        dietary: ["VG", "GF"],
+      },
+      {
+        name: "Khar Kadubu",
+        price: "₹100",
+        description: "Savory rice dumplings served with coconut chutney.",
+        image: "",
+        dietary: ["V", "GF"],
+      },
+      {
+        name: "Sajjige",
+        price: "₹80",
+        description: "Semolina dessert flavored with cardamom and ghee.",
+        image: "",
+        dietary: ["V"],
+      },
+    ],
+    Sunday: [
+      {
+        name: "Beegruta Pulav",
+        price: "₹150",
+        description:
+          "A signature Mandya dish of fragrant rice cooked with spices and vegetables.",
+        image: "",
+        dietary: ["V", "GF"],
+      },
+      {
+        name: "Beegruta Mutton Curry",
+        price: "₹250",
+        description:
+          "Slow-cooked mutton curry infused with spices and coconut.",
+        image: "",
+        dietary: ["GF"],
+      },
+      {
+        name: "Beegruta Kosambari",
+        price: "₹80",
+        description: "Fresh lentil salad with cucumber, lime, and coconut.",
+        image: "",
+        dietary: ["V", "GF"],
+      },
+      {
+        name: "Beegruta Curd Rice",
+        price: "₹120",
+        description:
+          "Creamy curd rice seasoned with mustard, curry leaves, and ginger.",
+        image: "",
+        dietary: ["V", "GF"],
+      },
+      {
+        name: "Mandya Holige",
+        price: "₹100",
+        description:
+          "Sweet flatbread filled with jaggery and lentils, a Mandya classic.",
+        image: "",
+        dietary: ["V"],
+      },
+      {
+        name: "Beegruta Mysore Pak",
+        price: "₹80",
+        description: "Rich, buttery sweet made from gram flour and ghee.",
+        image: "",
+        dietary: ["V"],
       },
     ],
   };

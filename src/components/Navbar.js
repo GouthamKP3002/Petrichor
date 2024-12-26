@@ -3,12 +3,12 @@ import { RiReservedLine } from "react-icons/ri";
 
 export default function Navbar() {
   return (
-    <nav className="bg-[#dfbf9f] shadow-lg">
+    <nav className="bg-[#e09a5d] shadow-lg">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <Link href="/" className="text-3xl font-extrabold  text-[#5c5147] ">
-              Petrichor
+            <Link href="/" className="text-3xl font-extrabold  text-[#392d24] ">
+              Saptha Swada
             </Link>
           </div>
           <div className="flex space-x-5 items-center justify-between">

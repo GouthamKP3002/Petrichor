@@ -12,10 +12,7 @@ import {
 
 // Manager keys for different locations
 const VALID_KEYS = {
-  "Petrichor2024-Nagrbavi": "Nagrbavi",
-  "Petrichor2023-hegganahalli": "Hegganahalli",
-  "Petrichor2022-Vijaynagar": "Vijaynagar",
-  "Petrichor2020-electronic": "Electronic City",
+  sapthaswada0000007: "Ramohalli",
 };
 
 export default function ManagerDashboard() {
@@ -76,8 +73,7 @@ export default function ManagerDashboard() {
       <div
         className="min-h-screen relative"
         style={{
-          backgroundImage:
-            "url('https://i.pinimg.com/originals/fd/6c/12/fd6c12dab0055e548eb8250f0c8db3ce.jpg')",
+          backgroundImage: "url(' banyantree.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -128,7 +124,7 @@ export default function ManagerDashboard() {
         <div className="flex justify-between items-center mb-8">
           <div>
             <h1 className="text-3xl font-serif text-[#2c2420]">
-              Petrichor Dashboard - {location}
+              Saptha Swada Dashboard - {location}
             </h1>
             <p className="text-[#5c5147]">Reservations</p>
           </div>
