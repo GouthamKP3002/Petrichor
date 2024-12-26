@@ -122,7 +122,7 @@ export default function MenuPage() {
         price: "₹100",
         description:
           "Finger millet balls served with a hearty greens-based curry.",
-        image: "",
+        image: "/mudde.jpg",
         dietary: ["VG", "GF"],
       },
       {
@@ -130,14 +130,14 @@ export default function MenuPage() {
         price: "₹120",
         description:
           "Lentil and greens-based curry served as a comforting broth.",
-        image: "",
+        image: "/bassaru.jpg",
         dietary: ["VG", "GF"],
       },
       {
         name: "Kharabath",
         price: "₹80",
         description: "Spicy semolina dish cooked with vegetables and spices.",
-        image: "",
+        image: "/karabath.jpg",
         dietary: ["V"],
       },
       {
@@ -145,7 +145,7 @@ export default function MenuPage() {
         price: "₹50",
         description:
           "A flavorful powder made of roasted lentils, chili, and tamarind.",
-        image: "",
+        image: "/chatnipudi.jpg",
         dietary: ["VG", "GF"],
       },
       {
@@ -153,14 +153,14 @@ export default function MenuPage() {
         price: "₹70",
         description:
           "Chutney made with sesame seeds and spices, unique to North Karnataka.",
-        image: "",
+        image: "/uppittu.jpg",
         dietary: ["VG", "GF"],
       },
       {
         name: "Holige (Obbattu)",
         price: "₹100",
         description: "Sweet flatbread stuffed with lentil and jaggery filling.",
-        image: "",
+        image: "/holige.jpg",
         dietary: ["V"],
       },
     ],
