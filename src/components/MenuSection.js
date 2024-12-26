@@ -23,7 +23,7 @@ export default function MenuPage() {
         price: "₹150",
         description:
           "A tangy and flavorful lentil-based curry prepared with freshly ground spices and vegetables.",
-        image: "",
+        image: "/udapisam.jpg",
         dietary: ["V", "GF"],
       },
       {
@@ -31,7 +31,7 @@ export default function MenuPage() {
         price: "₹80",
         description:
           "Soft and fluffy fritters made with yogurt, flour, and spices, deep-fried to perfection.",
-        image: "",
+        image: "/goli.jpg",
         dietary: ["V"],
       },
       {
@@ -39,7 +39,7 @@ export default function MenuPage() {
         price: "₹120",
         description:
           "Thin, soft rice crepes served with coconut chutney and jaggery syrup.",
-        image: "",
+        image: "/doseU.jpg",
         dietary: ["GF", "V"],
       },
       {
@@ -47,7 +47,7 @@ export default function MenuPage() {
         price: "₹140",
         description:
           "Crispy dosa made with clarified butter, served with sambar and chutney.",
-        image: "",
+        image: "/tuppaU.jpg",
         dietary: ["V"],
       },
       {
@@ -55,7 +55,7 @@ export default function MenuPage() {
         price: "₹130",
         description:
           "A tangy and spicy pineapple curry with mustard and jaggery flavors.",
-        image: "",
+        image: "/pinaple.jpg",
         dietary: ["V", "GF"],
       },
       {
@@ -63,7 +63,7 @@ export default function MenuPage() {
         price: "₹60",
         description:
           "A dessert made with ripe bananas, jaggery, and coconut milk.",
-        image: "",
+        image: "/bananaU.jpg",
         dietary: ["VG", "GF"],
       },
     ],
@@ -73,7 +73,7 @@ export default function MenuPage() {
         price: "₹220",
         description:
           "A spicy pork curry prepared with Coorg’s special black vinegar and spices.",
-        image: "",
+        image: "/porkU.jpg",
         dietary: ["GF"],
       },
       {
@@ -81,7 +81,7 @@ export default function MenuPage() {
         price: "₹120",
         description:
           "Soft steamed rice balls traditionally served with Coorg-style curries.",
-        image: "",
+        image: "/kadbuK.jpg",
         dietary: ["GF", "V"],
       },
       {
@@ -89,7 +89,7 @@ export default function MenuPage() {
         price: "₹140",
         description:
           "Tender bamboo shoots cooked in coconut and spices, a Coorg specialty.",
-        image: "",
+        image: "/kalle.jpg",
         dietary: ["VG", "GF"],
       },
       {
@@ -97,14 +97,14 @@ export default function MenuPage() {
         price: "₹100",
         description:
           "Rice flour flatbread flavored with coconut and green chilies.",
-        image: "",
+        image: "/akkirotioK.jpg",
         dietary: ["GF", "V"],
       },
       {
         name: "Noolputtu (String Hoppers)",
         price: "₹130",
         description: "Rice noodles served with spicy coconut-based curries.",
-        image: "",
+        image: "/savgeK.jpg",
         dietary: ["GF", "V"],
       },
       {
@@ -112,7 +112,7 @@ export default function MenuPage() {
         price: "₹80",
         description:
           "A Coorg dessert with ripe bananas and jaggery infused with Kachampuli vinegar.",
-        image: "",
+        image: "/rasamK.jpg",
         dietary: ["VG", "GF"],
       },
     ],
